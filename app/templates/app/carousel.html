@@ -1,0 +1,42 @@
+{% block carousel %}
+{% load static %}
+
+<section id="proyectos" style="padding: 20px;" id="main-card">
+
+  <div style="display: flex; justify-content: center; max-width: 800px;" class="container">
+    <div style="background-color: hsla(50, 33%, 25%, .75);" class="card"> 
+      <div class="card-body">
+          
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div style="text-align: center;" class="carousel-item active">
+                <img style="width: 80%;" src="{% static 'img\web1.png' %}" alt="My image">
+              </div>
+              <div style="text-align: center;" class="carousel-item">
+                <img style="width: 80%;" src="{% static 'img/web2.png' %}" alt="My image">
+              </div>
+              <div style="text-align: center;" class="carousel-item">
+                <img style="width: 80%;" src="{% static 'img/web3.png' %}" alt="My image">
+              </div>
+              <div style="text-align: center;" class="carousel-item">
+                <img style="width: 80%;" src="{% static 'img/web4.png' %}" alt="My image">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock carousel %}
